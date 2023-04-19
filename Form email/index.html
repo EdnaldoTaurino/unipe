@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/Style.css">
+    <title>Formularios html</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-image">
+            <img src="img/undraw_content_team_re_6rlg.svg" alt="imagem capa do formulario">
+        </div>
+    <div class="form">
+        <form class="contact-form" action="https://formsubmit.co/c26c09c7f4b1293174e188ba2443d530" method="POST"> 
+            <input type="hidden" name="_next" value="https://ednaldotaurino.github.io/form/obrigado.html">
+            <input type="hidden" name="_autoresponse" value="Recebemos seu contato, Retornaremos em breve obrigado.">
+            <div class="form-header">
+                <div class="title">
+                    <h1>Formulário</h1>
+                </div>
+            </div>
+            <div class="input-group">
+                <div class="input-box" >
+                    <label for="firstname">Nome</label>
+                        <input type="text" id="firstname" name="firstname" placeholder="Digite seu nome" required> 
+                </div> 
+
+                <div class="input-box">
+                    <label for="Email">Email</label>
+                        <input type="email" name="email" placeholder="SeuEmail@gmail.com" required > 
+                </div>
+
+                <div class="input-box">
+                    <label for="number">Telefone</label>
+                        <input type="text" id="number" name="number" placeholder="(xx) xxxxx-xxxx" pattern="^[0-9]{11}$" title="Por favor, digite 11 dígitos numéricos exemplo xx-xxxxx-xxxx" inputmode="numeric" maxlength="11" oninput="this.value = this.value.replace(/[^0-9]/g, '').substring(0, 11);" required>>
+                </div>
+
+                <div class="input-box">
+                    <label for="number">Telefone</label>
+                        <input type="text" id="number" name="number" placeholder="(xx) xxxxx-xxxx" pattern="^[0-9]{11}$" title="Por favor, digite 11 dígitos numéricos exemplo xx-xxxxx-xxxx" inputmode="numeric" maxlength="11" oninput="this.value = this.value.replace(/[^0-9]/g, '').substring(0, 11);" required>> 
+                </div>
+
+                <!--this.value: O valor atual do campo de entrada, que é uma string.
+                .replace(/[^0-9]/g, ''): O método replace() da string é usado para substituir todos os caracteres que não são números por uma string vazia.
+                A expressão regular /[^0-9]/g significa "encontre todos os caracteres que não estão entre 0 e 9" e o modificador g significa "global"
+                o que significa que a substituição deve ser feita em toda a string, não apenas na primeira ocorrência.
+                .substring(0, 11): O método substring() é usado para extrair um trecho da string, começando no índice 0 (o primeiro caractere) e terminando no índice 11 (o 12º caractere). 
+                Isso limita a string resultante a um máximo de 11 caracteres.
+                this.value = ...: O novo valor do campo de entrada é definido como a string resultante da substituição e da extração.
+                Em resumo, a função JavaScript filtra todos os caracteres que não são números da string inserida pelo usuário e limita a string resultante a um máximo de 11 caracteres. 
+                Isso garante que apenas dígitos numéricos sejam inseridos no campo de entrada e que o valor inserido não tenha mais do que 11 caracteres.-->
+
+                <div class="input-box" >
+                    <label for="mensagem">Digite uma mensagem</label>
+                        <textarea name="mensagem" maxlength="50" id="mensagem" cols="30" rows="10" placeholder="Máximo de 50 caracteres"></textarea>
+                </div>
+
+                <div class="options">
+                    <label>Qual setor deseja enviar este formulário?:</label>
+                        <select name="assunto" id="assunto" required>
+                            <option value="Elogios">Elogios</option>
+                            <option value="Duvida">Duvidas</option>
+                            <option value="Reclamação">Reclamações</option>
+                            <option value="Outros">Outros</option>
+                        </select>
+                </div>
+                <div class="chekbox">
+                    <input type="checkbox" value="Concordo com os termos" required> 
+                        <label for="termos">Concordo com os termos</label>
+                </div>
+                <div class="button">
+                    <label for="button"></label>
+                        <input type="submit"></input>
+                </div>
+                <div class="gender-group">
+                    <div class="gender-input">
+                        <input type="radio" name="gender" id="male" value="male">
+                        <label for="male">Masculino</label>
+                    </div>
+                    <div class="gender-input">
+                        <input type="radio" name="gender" id="Female" value="famele">
+                        <label for="famale">Feminino</label>
+                    </div>
+                    <div class="gender-input">
+                        <input type="radio" name="gender" id="other" value="other">
+                        <label for="other">Outros</label>
+                    </div>
+                    <div class="gender-input">
+                        <input type="radio" name="gender" id="none" value="none">
+                        <label for="none">Não dizer</label>
+                    </div>
+                </div>
+            </div>
+        </form>  
+    </div>               
+    </div>
+</body>
+</html>

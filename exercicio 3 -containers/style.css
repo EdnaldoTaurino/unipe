@@ -1,0 +1,166 @@
+@charset "UTF-8";
+
+:root { /*declara variaveis */
+    --cor0: rgb(75, 132, 238);
+    --cor1: rgba(43, 117, 255, 0.589);
+    --cor3: rgba(0, 89, 253, 0.589);
+}
+.h1top{
+    text-align: center;
+    padding-right: 100px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.h2top{
+    text-align: center;
+    
+}
+
+mark{
+    background-image: linear-gradient(rgb(9, 165, 255),rgb(255, 255, 255));
+}
+
+.p{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-indent: 3ch;
+    font-size: 0.9rem;
+    text-align: justify;
+}
+
+.titulo{
+    /*background-color: rgb(75, 132, 238); posso usar assim ou com variavel*/
+    background-image: linear-gradient(rgb(101, 93, 212),white);
+    text-align: center;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px black;
+}
+
+.img{ 
+    float: left;
+}
+   
+.menu ul{
+    display: flex;
+    flex-direction:row; /*ja é o padrão row que é na horizontal coloquei para ter referencia*/
+    justify-content:space-around; /*coloca todos os itens que ja estão flex com espaco entre eles e nos cantos, o space betewev coloca os primeiros e ultimos no canto e adiciona espaço entre eles*/
+    align-items: center;
+    list-style-type: none;
+    padding: 6px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    height: 20px;
+    
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;   
+}
+
+.menu a:hover {
+    background-color: rgb(0, 0, 0);
+    border-radius: 20%;
+    margin: 20px; /*colocando essa margin fez com que quando passa o mouse em cima eles espaçam entre si, ja que hover é depois que passar o mouse em cima quando clocar o mouse cria um espaçamento entre eles */
+    padding: 5px; /*paddin para selecionar o tamanho da caixa preta ao redor */
+  }
+
+.menu{
+    background-color: rgb(75, 132, 238);
+    box-shadow: 2px 2px 3px 2px black; /*adiciona sombra, sempre usar assim 1px 1px 1px 1px black alterar valores de px ou cor*/
+    border-radius: 5px;
+    /*position: fixed;
+    left: 0;
+    top: 0px;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(74, 255, 38); deixar o menu rolando junto com a tela */ 
+  }
+
+.menu a{
+    padding: 10px;   
+  }
+
+.container {
+    display: flex;
+}
+.thead {
+    margin-left: 19%;
+}
+
+.table tr, .table td, .table th, .table thead{
+   border: 1px solid;
+   box-sizing: border-box;
+}
+
+.table{
+    display: flex;
+    border: 1px solid;
+    width: 45%;
+    box-sizing: border-box;
+}
+
+.table tr:nth-child(even){ /* tr: estiliza todas tr // nth-child é um pseudo-seletor que seleciona todos os elementos tr que são pares (2ª, 4ª, 6ª, etc.) filhos de seus respectivos elementos pai. 
+                                O EVEN indica que estamos selecionando apenas os filhos pares.*/
+    background-color: #92929234;
+}
+
+.table tr:nth-child(odd){  /*ODD são os elementos impares o contrario de EVEN que é par*/
+    background-color: rgb(155, 155, 248);
+}
+
+.list {
+    border: 1px solid;
+    background-color: purple;
+    width: 55%;
+    flex-shrink: 0;
+}
+
+.sobre{
+    display:flex;  
+}
+
+.c1, .c2, .c3{
+    width: 50%;
+    height: auto; /*tamanho automatico fazendo com que o tamanho do background da caixa c1 c2 e c3 seja proporcional a o texto dentro e a tela*/
+    text-indent: 2ch;
+    padding: 10px; 
+}
+
+.c1 h3, .c2 h3, .c3 h3{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 2px;
+    margin: -20px -8px 0px -10px;
+    border-radius: 5px;
+    font-variant: small-caps; /*font todas maiusculas porem delicada*/
+}
+
+.c1{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+.c2{
+    background-color: aqua;
+}
+
+.c3{
+    background-color:rgb(0, 128, 21) ;
+    
+}
+
+.footer{
+    display: flex;
+    text-align: justify;  
+}
+
+.fsobre, .fcategorias{
+    background-color: rgb(206, 199, 199)
+}
+
+.fsobre, .fopcoes, .fcategorias, .fcontatos{
+    width: 100%;
+    height: auto;  
+    
+}
