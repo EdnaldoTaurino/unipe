@@ -155,11 +155,16 @@ a {
     text-align: justify;  
 }
 
+div a {
+    color: rgb(76, 0, 255);
+    text-decoration:underline
+}
+
 .fsobre, .fcategorias{
     background-color: rgb(206, 199, 199)
 }
 
-.fsobre, .fopcoes, .fcategorias, .fcontatos{
+.fsobre, .freferencias, .fcategorias, .fcontatos{
     width: 100%;
     height: auto;  
     
