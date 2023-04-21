@@ -53,17 +53,6 @@
                     <label for="number">Telefone</label>
                         <input type="text" id="number" name="number" placeholder="(xx) xxxxx-xxxx" pattern="^[0-9]{11}$" title="Por favor, digite 11 dígitos numéricos exemplo xx-xxxxx-xxxx" inputmode="numeric" maxlength="11" oninput="this.value = this.value.replace(/[^0-9]/g, '').substring(0, 11);" required>> 
                 </div>
-
-                <!--this.value: O valor atual do campo de entrada, que é uma string.
-                .replace(/[^0-9]/g, ''): O método replace() da string é usado para substituir todos os caracteres que não são números por uma string vazia.
-                A expressão regular /[^0-9]/g significa "encontre todos os caracteres que não estão entre 0 e 9" e o modificador g significa "global"
-                o que significa que a substituição deve ser feita em toda a string, não apenas na primeira ocorrência.
-                .substring(0, 11): O método substring() é usado para extrair um trecho da string, começando no índice 0 (o primeiro caractere) e terminando no índice 11 (o 12º caractere). 
-                Isso limita a string resultante a um máximo de 11 caracteres.
-                this.value = ...: O novo valor do campo de entrada é definido como a string resultante da substituição e da extração.
-                Em resumo, a função JavaScript filtra todos os caracteres que não são números da string inserida pelo usuário e limita a string resultante a um máximo de 11 caracteres. 
-                Isso garante que apenas dígitos numéricos sejam inseridos no campo de entrada e que o valor inserido não tenha mais do que 11 caracteres.-->
-
                 <div class="input-box" >
                     <label for="mensagem">Digite uma mensagem</label>
                         <textarea name="mensagem" maxlength="50" id="mensagem" cols="30" rows="10" placeholder="Máximo de 50 caracteres"></textarea>
