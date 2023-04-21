@@ -11,10 +11,8 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-
 .h2top{
-    text-align: center;
-    
+    text-align: center;  
 }
 
 .mark-p{
@@ -50,7 +48,6 @@
     padding: 6px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
     height: 20px;
-    
 }
 
 a {
@@ -123,7 +120,7 @@ a {
 
 .c1, .c2, .c3{
     width: 50%;
-    height: auto; /*tamanho automatico fazendo com que o tamanho do background da caixa c1 c2 e c3 seja proporcional a o texto dentro e a tela*/
+    height: auto; /*tamanho automatico fazendo com que o tamanho do background da caixa c1 c2 e c3 seja proporcional ao texto dentro e a tela*/
     text-indent: 2ch;
     padding: 10px; 
 }
@@ -138,15 +135,15 @@ a {
 }
 
 .c1{
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(3, 66, 184);
     color: white;
 }
 .c2{
-    background-color: aqua;
+    background-color: rgb(92, 98, 182);
 }
 
 .c3{
-    background-color:rgb(0, 128, 21) ;
+    background-color:rgb(20, 189, 189);
     
 }
 
