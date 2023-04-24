@@ -1,4 +1,4 @@
-Um prijeto criado na faculdade UNIPE
+Um projeto criado na faculdade UNIPÊ
 
 Criação de um site onde linka para um formulário.
 
